@@ -1,3 +1,6 @@
+mod syrup;
+
 fn main() {
-    println!("Hello, world!");
+    let result = syrup::add(2, 2);
+    println!("Result is {}", result);
 }
