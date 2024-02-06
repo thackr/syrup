@@ -1,6 +1,16 @@
 [package]
 name = "syrup"
 version = "0.1.0"
+description = "run a structured search across multiple domains in parallel, conveniently browse collections of query results from each domain."
+readme = "README.md"
 edition = "2021"
+exclude = [".github", "*.log", "Dockerfile"]
+keywords = ["tui", "terminal", "utility", "search", "query", "google"]
+
+[lints.rust]
+unsafe_code = "forbid"
+# unused = "allow"
 
 [dependencies]
+# -- Async
+tokio = { version = "1", features = ["full"] }
